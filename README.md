@@ -1,2 +1,2 @@
-# playing-card-recognition
-Using OpenCV recognising a playing card and guess it using a pytorch based model
+# Playing Card Recognition
+Real-time playing card recognition using PyTorch and OpenCV.
