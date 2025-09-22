@@ -5,7 +5,7 @@ import torch
 from PIL import Image
 from torchvision import transforms
 import numpy as np
-from main import SimpleCardClassifier, PlayingCardDataset
+from train import SimpleCardClassifier, PlayingCardDataset
 import torch.nn.functional as F
 
 

@@ -211,3 +211,4 @@ test/
 train/
 valid/
 card_classifier_old.pth
+csrt_tracking.py

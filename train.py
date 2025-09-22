@@ -6,11 +6,7 @@ import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder
 import timm
 from tqdm import tqdm
-
 import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-import sys
 
 
 class PlayingCardDataset(Dataset):
@@ -28,7 +24,6 @@ class PlayingCardDataset(Dataset):
         return self.data.classes
 
 
-dataset = PlayingCardDataset(data_dir='train')
 
 
 class SimpleCardClassifier(nn.Module):
@@ -86,6 +81,8 @@ if __name__ == '__main__':
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
+    dataset = PlayingCardDataset(data_dir='train')
+
     for epoch in range(num_epochs):
         # Training phase
         model.train()
@@ -118,14 +115,7 @@ if __name__ == '__main__':
         val_losses.append(val_loss)
         print(f"Epoch {epoch + 1}/{num_epochs} - Train loss: {train_loss}, Validation loss: {val_loss}")
 
-    img, label = train_dataset[0]
-    model.eval()
-    with torch.no_grad():
-        output = model(img.unsqueeze(0).to(device))
-        pred = output.argmax(1).item()
-    print("True:", label, "Predicted:", pred)
-
-
+    # Visualising the training results
     plt.plot(train_losses, label='Training loss')
     plt.plot(val_losses, label='Validation loss')
     plt.legend()

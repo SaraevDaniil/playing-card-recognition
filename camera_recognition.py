@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 from torchvision import transforms
 import numpy as np
-from main import SimpleCardClassifier
+from train import SimpleCardClassifier
 import torch.nn.functional as f
 from collections import deque
 
