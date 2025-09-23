@@ -1,12 +1,15 @@
-# Playing Card Recognition
-Real-time playing card recognition using PyTorch and OpenCV.
-
-![Card Recognition git](https://github.com/user-attachments/assets/ed59d316-0108-4d3c-b060-bec6c5c7e99d)
+<h1 align="center">Playing Card Recognition</h1>
+<p align="center">Real-time playing card recognition using PyTorch and OpenCV.
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ed59d316-0108-4d3c-b060-bec6c5c7e99d" alt="Card Recognition git" width="500">
+</p>
 
 ▶️ Usage
 
 Run the recognition system:
 `python camera_recognition.py`
+
 
 📂 Project Structure
 ```
