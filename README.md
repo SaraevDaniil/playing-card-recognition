@@ -24,4 +24,4 @@ card-recognition/
 📚 Acknowledgements
 
 This project’s training pipeline is adapted from Train Your First PyTorch Model - Card Classifier by Rob Mulla (@robikscube).
-The model architecture, dataset preparation, and baseline approach were inspired by this work.
+The model architecture, dataset preparation and baseline approach were inspired by this work.
