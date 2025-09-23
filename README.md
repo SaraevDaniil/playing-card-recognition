@@ -26,5 +26,5 @@ card-recognition/
 
 📚 Acknowledgements
 
-This project’s training pipeline is adapted from Train Your First PyTorch Model - Card Classifier by Rob Mulla (@robikscube).
+This project’s training pipeline is adapted from [Train Your First PyTorch Model](https://www.kaggle.com/code/robikscube/train-your-first-pytorch-model-card-classifier) by Rob Mulla (@robikscube).
 The model architecture, dataset preparation and baseline approach were inspired by this work.
