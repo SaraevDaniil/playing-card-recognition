@@ -81,7 +81,7 @@ if __name__ == '__main__':
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    dataset = PlayingCardDataset(data_dir='train')
+    dataset = PlayingCardDataset(data_dir='../train')
 
     for epoch in range(num_epochs):
         # Training phase
@@ -124,4 +124,4 @@ if __name__ == '__main__':
     torch.save({
         "model_state": model.state_dict(),
         "class_names": dataset.classes
-    }, "card_classifier.pth")
+    }, "../model/card_classifier.pth")

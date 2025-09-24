@@ -85,7 +85,7 @@ def main_loop(camera_index: int = 0, history_length: int = 5) -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Load model and class names
-    checkpoint = torch.load("card_classifier.pth", map_location=device)
+    checkpoint = torch.load("../model/card_classifier.pth", map_location=device)
     class_names = checkpoint["class_names"]
 
     model = SimpleCardClassifier(num_classes=len(class_names))
