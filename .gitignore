@@ -212,3 +212,5 @@ train/
 valid/
 card_classifier_old.pth
 csrt_tracking.py
+src/yolo_detect.py
+src/yolo11n.pt
