@@ -8,7 +8,8 @@
 ▶️ Usage
 
 Run the recognition system:
-`python camera_recognition.py`
+`python camera_recognition.py`  
+IMPORTANT: Mind the camera index
 
 
 📂 Project Structure
