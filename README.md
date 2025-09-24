@@ -2,7 +2,7 @@
 <p align="center">Real-time playing card recognition using PyTorch and OpenCV.
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ed59d316-0108-4d3c-b060-bec6c5c7e99d" alt="Card Recognition git" width="500">
+  <img src="demo.gif" alt="Card Recognition git" width="540">
 </p>
 
 ▶️ Usage
@@ -13,15 +13,20 @@ Run the recognition system:
 
 📂 Project Structure
 ```
-card-recognition/  
-│── README.md               # Project documentation  
-│── camera_recognition.py   # Real-time detection & classification using color thresholding, morphology and contour detection  
-│── card_classifier.pth     # Saved model  
-│── csrt_multiple.py        # Real-time detection & classification using the OpenCV CSRT tracker  
-│── one_card.py             # Initial code for real-time detection for only one card  
-│── environment.yml         # Conda environment  
-│── requirements.txt        # Pip dependencies  
-│── train.py                # Model definition & training  
+card-recognition/
+│── src/
+│   ├── camera_recognition.py # Real-time detection & classification using color thresholding, morphology and contour
+│   ├── csrt_multiple.py      # Real-time detection & classification using the OpenCV CSRT tracker
+│   ├── one_card.py           # Initial code for real-time detection for only one card
+│   ├── train.py              # Model definition & training
+│── models/
+│   └── card_classifier.pth   # Saved model
+│── tests/
+│   └── test_imports.py       # Simple tests
+│── README.md  
+│── demo.gif
+│── environment.yml
+│── requirements.txt
 ```
 
 📚 Acknowledgements
