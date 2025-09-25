@@ -1,0 +1,43 @@
+import cv2
+import numpy
+from roboflow import Roboflow
+from collections import defaultdict
+
+import numpy as np
+from ultralytics import YOLO
+
+model = YOLO("D:/Project/pytorch/playing-card-recognition/models/best.pt")
+
+cap = cv2.VideoCapture(3)
+
+track_history = defaultdict(lambda: [])
+
+try:
+    while True:
+        ret, frame = cap.read()
+        if ret:
+            result = model.track(frame, persist=True)[0]
+
+            if result.boxes and result.boxes.is_track:
+                boxes = result.boxes.xywh.cpu()
+                track_ids = result.boxes.id.int().cpu().tolist()
+
+                frame = result.plot()
+
+                for box, track_id in zip(boxes, track_ids):
+                    x, y, w, h = box
+                    track = track_history[track_id]
+                    track.append((float(x), float(y)))
+                    if len(track) > 30:
+                        track.pop()
+
+                    points = np.hstack(track).astype(np.int32).reshape((-1, 1, 2))
+                    cv2.polylines(frame, [points], isClosed=False, color=(230, 230, 230), thickness=10)
+
+                cv2.imshow('YOLO Tracking', frame)
+
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    break
+finally:
+    cap.release()
+    cv2.destroyAllWindows()
