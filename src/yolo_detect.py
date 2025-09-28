@@ -6,7 +6,7 @@ from collections import defaultdict
 import numpy as np
 from ultralytics import YOLO
 
-model = YOLO("D:/Project/pytorch/playing-card-recognition/models/best.pt")
+model = YOLO("../models/best.pt")
 
 cap = cv2.VideoCapture(3)
 

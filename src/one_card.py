@@ -83,7 +83,7 @@ def crop_card(frame):
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load model
-checkpoint = torch.load("card_classifier_1.pth", map_location=device)
+checkpoint = torch.load("../models/card_classifier.pth", map_location=device)
 class_names = checkpoint["class_names"]
 model = SimpleCardClassifier(num_classes=len(class_names))
 model.load_state_dict(checkpoint["model_state"])

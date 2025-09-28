@@ -124,4 +124,4 @@ if __name__ == '__main__':
     torch.save({
         "model_state": model.state_dict(),
         "class_names": dataset.classes
-    }, "../model/card_classifier.pth")
+    }, "../models/card_classifier.pth")
