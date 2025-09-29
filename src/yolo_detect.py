@@ -14,7 +14,7 @@ try:
         ret, frame = cap.read()
         frame = cv2.resize(frame, (640, 480))
         if ret:
-            result = model.track(frame, persist=True)[0]
+            result = model.track(frame, persist=True, conf=0.5, iou=0.5)[0]
 
             if result.boxes and result.boxes.is_track:
                 boxes = result.boxes.xywh.cpu()
