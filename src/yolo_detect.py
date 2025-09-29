@@ -1,8 +1,5 @@
 import cv2
-import numpy
-from roboflow import Roboflow
 from collections import defaultdict
-
 import numpy as np
 from ultralytics import YOLO
 
