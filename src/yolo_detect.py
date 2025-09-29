@@ -12,6 +12,7 @@ track_history = defaultdict(lambda: [])
 try:
     while True:
         ret, frame = cap.read()
+        frame = cv2.resize(frame, (640, 480))
         if ret:
             result = model.track(frame, persist=True)[0]
 
@@ -31,10 +32,10 @@ try:
                     points = np.hstack(track).astype(np.int32).reshape((-1, 1, 2))
                     cv2.polylines(frame, [points], isClosed=False, color=(230, 230, 230), thickness=10)
 
-                cv2.imshow('YOLO Tracking', frame)
+        cv2.imshow('YOLO Tracking', frame)
 
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 finally:
     cap.release()
     cv2.destroyAllWindows()
