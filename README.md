@@ -42,7 +42,8 @@ The goal is to move from cropped card classification to direct card detection + 
 	•	First YOLO training runs have been completed successfully.  
 	•	Integration with OpenCV and real-time detection is in progress.  
 
-Note: The YOLO model is not yet ready for reliable use. Detection accuracy and tracking are still being improved.
+Note: The YOLO model is not yet ready for reliable use. The model should be improved to detect the card in a frame,
+which is not the case yet.
 
 <h2>Acknowledgements</h2>
 
