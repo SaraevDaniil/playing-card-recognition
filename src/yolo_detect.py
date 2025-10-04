@@ -3,7 +3,7 @@ from collections import defaultdict
 import numpy as np
 from ultralytics import YOLO
 
-model = YOLO("../models/best_fixed.pt")
+model = YOLO("../models/roboflow_data.pt")
 track_history = defaultdict(lambda: [])
 
 def main_loop(camera_index: int = 0) -> None:

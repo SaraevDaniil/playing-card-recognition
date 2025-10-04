@@ -7,7 +7,7 @@ def test_class_names_consistency():
     src_path = os.path.join(project_root, "src")
     assert os.path.isdir(src_path), f"src folder is missing at {src_path}"
     assert os.path.exists(os.path.join(project_root, "models", "card_classifier.pth"))
-    assert os.path.exists(os.path.join(project_root, "models", "best.pt"))
+    assert os.path.exists(os.path.join(project_root, "models", "full_frame.pt"))
 
     model_path = os.path.join(project_root, "models", "card_classifier.pth")
     checkpoint = torch.load(model_path)
