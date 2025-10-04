@@ -43,7 +43,7 @@ The goal is to move from cropped card classification to direct card detection + 
 	•	Integration with OpenCV and real-time detection is in progress.  
 
 Note: The YOLO model is not yet ready for reliable use. The model should be improved to detect the card in a frame,
-which is not the case yet.  
+which is not the case yet. Newer model ```roboflow_data.pt``` is built with the dataset from Roboflow.  
 TODO: Train the model based on synthetic dataset created from trained data
 
 <h2>Acknowledgements</h2>
