@@ -2,7 +2,7 @@
 <p align="center">Real-time playing card recognition using PyTorch and OpenCV.
 </p>
 
-<h4 align="center">CNN Model &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; YOLO Model</h4>  
+<h4 align="center">CNN Model &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; YOLO Model</h4>  
 
 <div align="center">
 	<img src="cnn_demo.gif" alt="Card Recognition git" width=49%>
@@ -42,13 +42,7 @@ model
 
 Alongside the CNN classifier, started experimenting with YOLO-based object detection for playing cards.
 The goal is to move from cropped card classification to direct card detection + recognition in full frames.  
-	•	Training and validation data are re-used from the CNN pipeline.  
-	•	First YOLO training runs have been completed successfully.  
-	•	Integration with OpenCV and real-time detection is in progress.  
-
-Note: The YOLO model is not yet ready for reliable use. The model should be improved to detect the card in a frame,
-which is not the case yet. Newer model ```roboflow_data.pt``` is built with the dataset from Roboflow.  
-TODO: Train the model based on synthetic dataset created from trained data
+Note: Newer model ```yolo_roboflow.pt``` is built with the dataset from Roboflow.
 
 <h2>Acknowledgements</h2>
 
