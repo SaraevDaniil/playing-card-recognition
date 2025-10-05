@@ -1,9 +1,13 @@
 <h1 align="center">Playing Card Recognition</h1>
 <p align="center">Real-time playing card recognition using PyTorch and OpenCV.
 </p>
-<p align="center">
-  <img src="demo.gif" alt="Card Recognition git" width="540">
-</p>
+
+<h4 align="center">CNN Model &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; YOLO Model</h4>  
+
+<div align="center">
+	<img src="demo.gif" alt="Card Recognition git" width=49%>
+	<img src="demo.gif" alt="Card Recognition git" width=49%>
+</div>
 
 <h2>Usage</h2> 
 
