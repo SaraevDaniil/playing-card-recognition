@@ -5,8 +5,8 @@
 <h4 align="center">CNN Model &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; YOLO Model</h4>  
 
 <div align="center">
-	<img src="demo.gif" alt="Card Recognition git" width=49%>
-	<img src="demo.gif" alt="Card Recognition git" width=49%>
+	<img src="cnn_demo.gif" alt="Card Recognition git" width=49% height="151">
+	<img src="yolo_demo.gif" alt="Card Recognition git" width=49%>
 </div>
 
 <h2>Usage</h2> 
