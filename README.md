@@ -28,12 +28,14 @@ card-recognition/
 │   └── yolo_detect.py        # Recognition script based on YOLO
 │── models/
 │   ├── card_classifier.pth   # Saved
-│   └── best.pt               # Saved YOLO model
+│   ├── synthetic_data.pt     # YOLO model
+│   └── yolo_roboflow.pt      # YOLO model
 model
 │── tests/
 │   └── test_imports.py       # Simple tests
 │── README.md  
-│── demo.gif
+│── cnn_demo.gif
+│── yolo_demo.gif
 │── environment.yml
 │── requirements.txt
 ```

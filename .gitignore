@@ -214,3 +214,4 @@ card_classifier_old.pth
 csrt_tracking.py
 src/yolo11n.pt
 cnn_demo_old.gif
+models/full_frame.pt
