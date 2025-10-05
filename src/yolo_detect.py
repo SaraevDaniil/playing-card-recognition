@@ -3,7 +3,7 @@ from collections import defaultdict
 import numpy as np
 from ultralytics import YOLO
 
-model = YOLO("../models/roboflow_data.pt")
+model = YOLO("../models/yolo_roboflow.pt")
 track_history = defaultdict(lambda: [])
 
 def main_loop(camera_index: int = 0) -> None:
@@ -13,7 +13,7 @@ def main_loop(camera_index: int = 0) -> None:
             ret, frame = cap.read()
             frame = cv2.resize(frame, (640, 480))
             if ret:
-                result = model.track(frame, persist=True)[0]
+                result = model.track(frame, persist=True, conf=0.5, iou=0.5)[0]
 
                 if result.boxes and result.boxes.is_track:
                     boxes = result.boxes.xywh.cpu()
